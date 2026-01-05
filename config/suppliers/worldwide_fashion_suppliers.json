@@ -1,0 +1,259 @@
+{
+  "worldwide_fashion_suppliers": {
+    "clothing_suppliers": [
+      {
+        "supplier_id": "CLOTH_EU_001",
+        "name": "European Fashion Group",
+        "region": "europe",
+        "category": "clothing",
+        "headquarters": "Milan, Italy",
+        "active": true,
+        "rating": 4.7,
+        "brands": ["Eleganza", "ModaStyle", "TrendWear"],
+        "specialties": ["luxury fashion", "haute couture", "formal wear"],
+        "min_order_value": 5000,
+        "lead_time_days": 14,
+        "shipping_countries": ["EU", "US", "UAE", "Japan", "Australia"],
+        "certifications": ["OEKO-TEX", "GOTS", "Fair Trade"],
+        "api_integration": {
+          "available": true,
+          "type": "rest_api",
+          "quality_score": 9.0,
+          "base_url": "https://api.europeanfashion.com/v2"
+        },
+        "payment_terms": "Net 30",
+        "return_policy": "30 days"
+      },
+      {
+        "supplier_id": "CLOTH_ASIA_001",
+        "name": "Asia Pacific Textiles",
+        "region": "asia_pacific",
+        "category": "clothing",
+        "headquarters": "Shanghai, China",
+        "active": true,
+        "rating": 4.3,
+        "brands": ["AsiaTrend", "PacificStyle", "DragonWear"],
+        "specialties": ["casual wear", "activewear", "fast fashion"],
+        "min_order_value": 2000,
+        "lead_time_days": 21,
+        "shipping_countries": ["Worldwide"],
+        "certifications": ["ISO 9001", "WRAP"],
+        "api_integration": {
+          "available": true,
+          "type": "rest_api",
+          "quality_score": 8.5,
+          "base_url": "https://api.asiapacifictextiles.com/v1"
+        },
+        "payment_terms": "Net 45",
+        "return_policy": "15 days"
+      },
+      {
+        "supplier_id": "CLOTH_US_001",
+        "name": "American Apparel Wholesale",
+        "region": "north_america",
+        "category": "clothing",
+        "headquarters": "New York, USA",
+        "active": true,
+        "rating": 4.6,
+        "brands": ["AmeriStyle", "USWear", "CoastFashion"],
+        "specialties": ["denim", "sportswear", "urban fashion"],
+        "min_order_value": 3500,
+        "lead_time_days": 10,
+        "shipping_countries": ["North America", "EU", "Latin America"],
+        "certifications": ["Fair Trade", "B-Corp", "CPSIA"],
+        "api_integration": {
+          "available": true,
+          "type": "rest_api",
+          "quality_score": 9.5,
+          "base_url": "https://api.americanapparel.com/api/v3"
+        },
+        "payment_terms": "Net 30",
+        "return_policy": "60 days"
+      }
+    ],
+    "perfume_suppliers": [
+      {
+        "supplier_id": "PERF_EU_001",
+        "name": "French Fragrance House",
+        "region": "europe",
+        "category": "perfume",
+        "headquarters": "Grasse, France",
+        "active": true,
+        "rating": 4.9,
+        "brands": ["Parfum Luxe", "Essence Royale", "Arome Divine"],
+        "specialties": ["luxury perfumes", "niche fragrances", "custom blends"],
+        "min_order_value": 8000,
+        "lead_time_days": 7,
+        "shipping_countries": ["Worldwide"],
+        "certifications": ["IFRA", "Ecocert", "Cosmebio"],
+        "api_integration": {
+          "available": true,
+          "type": "rest_api",
+          "quality_score": 9.2,
+          "base_url": "https://api.frenchfragrance.com/v1"
+        },
+        "authentication_system": true,
+        "batch_tracking": true,
+        "payment_terms": "Net 15",
+        "return_policy": "No returns on opened items"
+      },
+      {
+        "supplier_id": "PERF_ME_001",
+        "name": "Arabian Perfume Traders",
+        "region": "middle_east",
+        "category": "perfume",
+        "headquarters": "Dubai, UAE",
+        "active": true,
+        "rating": 4.5,
+        "brands": ["Oud Royale", "Desert Essence", "Arabian Nights"],
+        "specialties": ["oud perfumes", "oriental fragrances", "attars"],
+        "min_order_value": 6000,
+        "lead_time_days": 10,
+        "shipping_countries": ["Middle East", "EU", "Asia", "US"],
+        "certifications": ["ISO 22716", "Halal"],
+        "api_integration": {
+          "available": true,
+          "type": "rest_api",
+          "quality_score": 8.0,
+          "base_url": "https://api.arabianperfume.com/v2"
+        },
+        "authentication_system": true,
+        "batch_tracking": true,
+        "payment_terms": "Net 30",
+        "return_policy": "14 days sealed items only"
+      }
+    ],
+    "accessories_suppliers": [
+      {
+        "supplier_id": "ACC_EU_001",
+        "name": "Italian Leather Goods",
+        "region": "europe",
+        "category": "accessories",
+        "headquarters": "Florence, Italy",
+        "active": true,
+        "rating": 4.8,
+        "brands": ["Lusso Leather", "Artigiano", "Bella Borsa"],
+        "specialties": ["leather bags", "belts", "wallets", "luxury accessories"],
+        "min_order_value": 7000,
+        "lead_time_days": 18,
+        "shipping_countries": ["Worldwide"],
+        "certifications": ["LWG", "Made in Italy", "Genuine Leather"],
+        "api_integration": {
+          "available": true,
+          "type": "rest_api",
+          "quality_score": 8.8,
+          "base_url": "https://api.italianleather.com/v1"
+        },
+        "payment_terms": "Net 30",
+        "return_policy": "30 days"
+      },
+      {
+        "supplier_id": "ACC_ASIA_001",
+        "name": "Asian Fashion Accessories",
+        "region": "asia_pacific",
+        "category": "accessories",
+        "headquarters": "Hong Kong",
+        "active": true,
+        "rating": 4.2,
+        "brands": ["AsiaLux", "TrendyAcc", "StylePlus"],
+        "specialties": ["jewelry", "scarves", "watches", "fashion accessories"],
+        "min_order_value": 2500,
+        "lead_time_days": 25,
+        "shipping_countries": ["Worldwide"],
+        "certifications": ["ISO 9001"],
+        "api_integration": {
+          "available": true,
+          "type": "rest_api",
+          "quality_score": 7.5,
+          "base_url": "https://api.asianfashionacc.com/v1"
+        },
+        "payment_terms": "Net 45",
+        "return_policy": "20 days"
+      }
+    ],
+    "glasses_suppliers": [
+      {
+        "supplier_id": "GLASS_EU_001",
+        "name": "European Optical Excellence",
+        "region": "europe",
+        "category": "glasses",
+        "headquarters": "Paris, France",
+        "active": true,
+        "rating": 4.7,
+        "brands": ["VisionLuxe", "OpticStyle", "ClearView"],
+        "specialties": ["prescription glasses", "designer sunglasses", "optical lenses"],
+        "min_order_value": 4500,
+        "lead_time_days": 12,
+        "shipping_countries": ["Worldwide"],
+        "certifications": ["CE", "ISO 12312", "UV400", "FDA"],
+        "api_integration": {
+          "available": true,
+          "type": "rest_api",
+          "quality_score": 9.3,
+          "base_url": "https://api.europeanoptical.com/v2"
+        },
+        "prescription_services": true,
+        "virtual_try_on": true,
+        "payment_terms": "Net 30",
+        "return_policy": "45 days"
+      },
+      {
+        "supplier_id": "GLASS_ASIA_001",
+        "name": "Asia Eyewear Manufacturing",
+        "region": "asia_pacific",
+        "category": "glasses",
+        "headquarters": "Seoul, South Korea",
+        "active": true,
+        "rating": 4.4,
+        "brands": ["AsiaVision", "TechSpecs", "ModernEye"],
+        "specialties": ["sunglasses", "fashion eyewear", "sports glasses"],
+        "min_order_value": 3000,
+        "lead_time_days": 20,
+        "shipping_countries": ["Worldwide"],
+        "certifications": ["CE", "UV400", "ISO 12312"],
+        "api_integration": {
+          "available": true,
+          "type": "rest_api",
+          "quality_score": 8.2,
+          "base_url": "https://api.asiaeyewear.com/v1"
+        },
+        "prescription_services": false,
+        "virtual_try_on": true,
+        "payment_terms": "Net 45",
+        "return_policy": "30 days"
+      },
+      {
+        "supplier_id": "GLASS_US_001",
+        "name": "American Eyewear Solutions",
+        "region": "north_america",
+        "category": "glasses",
+        "headquarters": "Los Angeles, USA",
+        "active": true,
+        "rating": 4.6,
+        "brands": ["USOptics", "WestCoast Vision", "American Specs"],
+        "specialties": ["blue light glasses", "prescription eyewear", "sunglasses"],
+        "min_order_value": 4000,
+        "lead_time_days": 8,
+        "shipping_countries": ["North America", "EU", "Asia"],
+        "certifications": ["FDA", "ANSI Z80.3", "UV400", "CE"],
+        "api_integration": {
+          "available": true,
+          "type": "rest_api",
+          "quality_score": 9.0,
+          "base_url": "https://api.americaneyewear.com/api/v2"
+        },
+        "prescription_services": true,
+        "virtual_try_on": true,
+        "payment_terms": "Net 30",
+        "return_policy": "60 days"
+      }
+    ]
+  },
+  "comparison_criteria": {
+    "pricing": ["min_order_value", "volume_discounts", "payment_terms"],
+    "quality": ["rating", "certifications", "return_policy"],
+    "delivery": ["lead_time_days", "shipping_countries", "tracking_available"],
+    "technology": ["api_integration", "quality_score", "automation_level"],
+    "support": ["customer_service_rating", "language_support", "documentation_quality"]
+  }
+}
