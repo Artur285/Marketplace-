@@ -1,0 +1,60 @@
+{
+  "suppliers": [
+    {
+      "supplier_id": "SUPPLIER_001",
+      "name": "Example Supplier 1",
+      "active": true,
+      "type": "rest_api",
+      "config": {
+        "base_url": "https://api.supplier1.com/v1",
+        "auth_type": "api_key",
+        "api_key": "YOUR_API_KEY_HERE",
+        "timeout": 30
+      },
+      "capabilities": {
+        "inventory_sync": true,
+        "order_creation": true,
+        "order_tracking": true,
+        "webhooks": true
+      },
+      "webhooks": {
+        "enabled": true,
+        "secret": "YOUR_WEBHOOK_SECRET_HERE",
+        "events": [
+          "order.updated",
+          "inventory.updated",
+          "shipment.tracking"
+        ]
+      },
+      "field_mappings": {
+        "sku": "product_code",
+        "quantity": "stock_level",
+        "price": "unit_cost"
+      }
+    },
+    {
+      "supplier_id": "SUPPLIER_002",
+      "name": "Example Supplier 2",
+      "active": true,
+      "type": "rest_api",
+      "config": {
+        "base_url": "https://api.supplier2.com/api",
+        "auth_type": "oauth2",
+        "client_id": "YOUR_CLIENT_ID",
+        "client_secret": "YOUR_CLIENT_SECRET",
+        "timeout": 30
+      },
+      "capabilities": {
+        "inventory_sync": true,
+        "order_creation": true,
+        "order_tracking": true,
+        "webhooks": false
+      },
+      "field_mappings": {
+        "sku": "item_id",
+        "quantity": "available_qty",
+        "price": "price"
+      }
+    }
+  ]
+}

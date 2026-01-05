@@ -1,0 +1,56 @@
+{
+  "database": {
+    "type": "postgresql",
+    "host": "localhost",
+    "port": 5432,
+    "database": "marketplace_wms_tms",
+    "username": "marketplace_user",
+    "password": "CHANGE_ME"
+  },
+  "api": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "base_path": "/api",
+    "rate_limit": {
+      "enabled": true,
+      "requests_per_minute": 60
+    },
+    "cors": {
+      "enabled": true,
+      "allowed_origins": ["*"]
+    }
+  },
+  "wms": {
+    "default_warehouse": "WAREHOUSE_01",
+    "low_stock_threshold": 10,
+    "enable_auto_replenishment": false,
+    "picking_strategy": "FIFO"
+  },
+  "tms": {
+    "default_carrier": "CARRIER_01",
+    "route_optimization_enabled": true,
+    "tracking_update_interval_minutes": 30
+  },
+  "suppliers": {
+    "sync_interval_hours": 6,
+    "max_retry_attempts": 3,
+    "timeout_seconds": 30
+  },
+  "webhooks": {
+    "enabled": true,
+    "verify_signatures": true,
+    "max_payload_size_mb": 10
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/marketplace.log",
+    "max_size_mb": 100,
+    "backup_count": 5
+  },
+  "security": {
+    "jwt_secret": "CHANGE_ME_TO_RANDOM_SECRET",
+    "jwt_expiration_hours": 24,
+    "password_min_length": 8,
+    "require_https": true
+  }
+}
